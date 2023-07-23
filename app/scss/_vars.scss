@@ -1,0 +1,11 @@
+$white: #fff;
+$orange: #ee6d4d;
+$blue: #222d41;
+$brown: #e1d7d4;
+
+:root{
+  --title-height: 56px;
+  @media(max-width:600px){
+    --title-height: 66px;
+  }
+}

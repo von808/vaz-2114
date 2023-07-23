@@ -1,0 +1,451 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header{
+  padding: 20px 0 35px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    display: inline-block;
+    margin-top: 10px;
+    &__img{
+      width: 118px;
+      height: 138px;
+      object-fit: contain;
+    }
+  }
+}
+.menu{
+  display: flex;
+  gap: 35px;
+  &-link{
+    display: flex;
+    flex-direction: column;
+    color: $blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 170px;
+    width: max-content;
+  }
+  &-link--pdf{
+    flex-direction: row;
+    text-align: left;
+    max-width: 200px;
+  }
+  &__img {
+    margin-bottom: 10px;
+    source,
+    img{
+      width: 150px;
+      height: 65px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__img--pdf{
+    margin: 0;
+    source,
+    img{
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__title--pdf{
+    max-width: 110px;
+    width: 100%;
+  }
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-transform: uppercase;
+  padding-left: 20px;
+  max-width: 900px;
+  &__item-link{
+    display: inline-block;
+    color: $white;
+    padding: 10px 5px;
+    background-color: $blue;
+    transition: all .1s linear;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: -10px;
+      width: 15px;
+      height: 0;
+      border-top: 33.5px solid $blue;
+      border-left: 10px solid transparent;
+      transition: all .1s linear;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      right: -10px;
+      width: 15px;
+      height: 0;
+      border-right: 10px solid transparent;
+      border-bottom: 34px solid $blue;
+      transition: all .1s linear;
+    }
+  }
+  &__item-link:hover{
+    background-color: $orange;
+    &:before,
+    &:after{
+      border-top-color: $orange;
+      border-bottom-color: $orange;
+    }
+  }
+}
+.header{
+  &__inner{
+    display: grid;
+    grid-template-columns: 118px auto 200px;
+    grid-template-rows: auto;
+    gap: 15px;
+    justify-content: stretch;
+    align-items: self-start;
+  }
+  .logo{
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .menu{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .menu-link--pdf{
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .nav{
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+}
+.footer{
+  padding: 30px 0 40px;
+  background-color: $orange;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__info{
+    max-width: 115px;
+  }
+  &__link{
+    color: $white;
+  }
+  &__nav-item,
+  &__menu-item{
+    margin-bottom: 10px;
+    color: $white;
+  }
+  &__menu-item--title{
+    font-weight: 500;
+  }
+  &__menu-item .footer__link{
+    padding-left: 13px;
+    position: relative;
+    display: block;
+    &::before{
+      position: absolute;
+      content: '';
+      left: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 4px;
+      background-color: $white;
+    }
+  }
+  .logo{
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+.copyright{
+  display: block;
+}
+
+.news{
+  background-color: $orange;
+  padding: 33px 0;
+  background-image: url(../images/emblema-vaz.png);
+  background-repeat: no-repeat;
+  background-position: center left 40%;
+  &__inner{
+    color: $white;
+  }
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px 0;
+    padding-top: 30px;
+  }
+  &__item{
+    display: flex;
+    gap: 13px;
+    max-width: 450px;
+  }
+  &__item-img{
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__item-date{
+    background-color: $blue;
+    padding: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  &__item-text{
+    color: $white;
+    line-height: 140%;
+  }
+}
+.to{
+  padding: 50px 0 0;
+  &__img{
+    display: block;
+    padding-top: 50px;
+    object-position: center;
+    source,
+    img{
+      object-fit: contain;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+.records{
+  &__content{
+    padding: 60px 64px 40px;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 15px;
+  }
+  &__item-record{
+    font-size: 1.8rem;
+  }
+  &__item-link{
+    color: $blue;
+    font-weight: 500;
+  }
+}
+
+.beginner,
+.where{
+  &__inner{
+    background-color: $brown;
+  }
+  &__content{
+    display: flex;
+    justify-content: start;
+    background-image:url(../images/how.png);
+    background-repeat: no-repeat;
+    background-position: left 150px;
+    margin: 60px 0 0 0;
+    padding: 30px 0 20px;
+    gap: 120px;
+  }
+  &__list-item{
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  &__list-item--link{
+    color: $blue;
+  }
+}
+.where__content{
+  gap: 30px;
+  .title-aside{
+    margin-right: auto;
+  }
+}
+.comparison{
+  &__inner{
+    padding: 65px 0;
+  }
+  &__subtitle{
+    text-align: center;
+    padding: 30px 0 55px;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 275px);
+    grid-template-rows: auto;
+    gap: 50px 120px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  &__item{
+    display: block;
+  }
+  &__item-img{
+    display: block;
+    width: 275px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 20px;
+    source,
+    img{
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  &__item-name{
+    text-align: center;
+    display: block;
+    color: $blue;
+  }
+}
+
+.video,
+.reviews,
+.notes,
+.tuning{
+  &__inner{
+    padding: 60px 0;
+  }
+  &__content{
+    padding-top: 50px;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: auto;
+    gap: 40px;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  &__item{
+    width: 255px;
+  }
+  &__item-img{
+    width: 230px;
+    height: 130px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 18px;
+    display: block;
+  }
+  &__item-date{
+    color: $white;
+    padding: 4px 6px;
+    background-color: $orange;
+    margin-bottom: 13px;
+    width: fit-content;
+  }
+  &__item-text{
+    color: $blue;
+    display: block;
+    width: 100%;
+  }
+
+  .notes__link{
+    color: $blue;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+.author{
+  font-size: 1.4rem;
+  color: $blue;
+  margin-top: 15px;
+  display: block;
+}
+.car{
+  &__content{
+    padding: 55px 9px 10px;
+  }
+  &__img{
+    max-width: 750px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+    display: block;
+    margin: 0 auto 10px;
+    source,
+    img{
+      width: 100%;
+    }
+  }
+  &__img-subtitle{
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto 35px;
+    font-size: 1.4rem;
+  }
+  p{
+    line-height: 140%;
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.questions{
+  &__inner{
+    margin-top: 35px;
+    padding: 35px 0 0;
+    background-color: $brown;
+    background-image: url(../images/how-questions.png);
+    background-repeat: no-repeat;
+    background-position: 27% center;
+  }
+  &__content{
+    padding: 35px 0 65px;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px 100px;
+  }
+  &__date{
+    color: $white;
+    background-color: $blue;
+    padding: 4px;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+  &__link{
+    color: $blue;
+  }
+  .btn--more{
+    top: 70%;
+  }
+}
+
+
+
+@import 'media';

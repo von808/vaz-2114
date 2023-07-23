@@ -1,0 +1,120 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+  background-color: $white;
+  font-family: ubuntu, sans-serif;
+  font-weight: 400;
+  color: $blue;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 3.6rem;
+  color: $white;
+  background-color: $blue;
+  padding: 10px 20px;
+  position: relative;
+  width: fit-content;
+  height: var(--title-height);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -15px;
+    width: 20px;
+    height: 0;
+    border-top: var(--title-height) solid $blue;
+    border-left: 15px solid transparent;
+    transition: all .1s linear;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: -15px;
+    width: 20px;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-bottom: var(--title-height) solid $blue;
+    transition: all .1s linear;
+  }
+}
+
+.btn--more{
+  font-size: 2rem;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 5px;
+  color: $white;
+  background-color: $orange;
+  top: 25%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -10px;
+    width: 15px;
+    height: 0;
+    border-top: 34px solid $orange;
+    border-left: 10px solid transparent;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: -10px;
+    width: 15px;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 34px solid $orange;
+  }
+}
+
+.title-aside{
+  font-size: 8.4rem;
+  padding-top: 20px;
+}
+
+.text14 {
+  font-size: 1.4rem;
+}
+.text16 {
+  font-size: 1.6rem;
+}
+.text18 {
+  font-size: 1.8rem;
+}

@@ -1,0 +1,28 @@
+<svg id="Логотип" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="138" viewBox="0 0 118 138">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 61px;
+        font-family: "Trebuchet MS";
+      }
+
+      .cls-1, .cls-2 {
+        fill: #293241;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 36px;
+        font-family: Consolas;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <text id="В_А_З" data-name="В А З" class="cls-1" x="-2" y="44.5">В А З</text>
+  <text id="_.RU" data-name=".RU" class="cls-2" x="60" y="137.5">.RU</text>
+  <image id="Слой_7" data-name="Слой 7" y="60" width="118" height="39" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAAnAQMAAADguy4AAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEXubE0AAAC8ldmRAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+cHFRAtI4wZcsoAAAAPSURBVCjPY2AYBaOAfgAAAnAAAT8xX84AAAAASUVORK5CYII="/>
+  <text id="_2114" data-name="2114" class="cls-3" x="6" y="91">2114</text>
+</svg>

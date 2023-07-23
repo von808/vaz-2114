@@ -1,0 +1,179 @@
+@media (max-width:1200px){
+  .video,
+  .reviews,
+  .notes,
+  .tuning{
+    &__items{
+      grid-template-columns: repeat(3, 255px);
+      
+    }
+  }
+}
+@media (max-width:1100px){
+  .menu__img img{
+    width: 100px;
+  }
+  .header .menu{
+    grid-row: 1/3;
+  }
+  .header .menu-link--pdf{
+    grid-row: 1/3;
+  }
+  .header .nav{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .comparison__items{
+    grid-template-columns: repeat(2, 275px);
+  }
+}
+@media (max-width:900px){
+  .video,
+  .reviews,
+  .notes,
+  .tuning{
+    &__items{
+      grid-template-columns: repeat(2, 255px);
+      
+    }
+  }
+}
+@media (max-width:800px){
+  html{
+    font-size: 7px;
+  }
+  .questions__items{
+    gap: 25px;
+  }
+}
+@media (max-width:700px){
+  .comparison__items{
+    grid-template-columns: repeat(1, 275px);
+  }
+  .beginner__content{
+    gap: 30px;
+  }
+  .beginner__list {
+    min-width: 146px;
+  }
+  .footer__inner{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px 80px;
+  }
+}
+@media (max-width:600px){
+  .video,
+  .reviews,
+  .notes,
+  .tuning{
+    &__items{
+      grid-template-columns: auto;
+      
+    }
+    &__item{
+      max-width: 230px;
+      width: 100%;
+    }
+    &__item-img{
+      width: 100%;
+      source,
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+  }
+  }
+}
+@media (max-width:550px){
+  .questions__items{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .where__content{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .where__content .title-aside{
+    margin-right: 40px;
+  }
+  .footer__inner {
+    gap: 30px 10px;
+  }
+}
+@media (max-width:500px){
+  .beginner__content{
+    flex-wrap: wrap;
+  }
+  .title-aside {
+    width: 100%;
+  }
+  .where__content {
+    justify-content: left;
+  }
+  .records__content{
+    padding: 60px 0px 40px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media (max-width:470px){
+  html{
+    font-size: 5px;
+  }
+  .beginner__content,
+  .where__content{
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 2.5rem;
+  }
+  .car__content,
+  .comparison__subtitle,
+  .car__img-subtitle,
+  .records__items,
+  .video__content,
+  .reviews__item-date,
+  .notes__item-date,
+  .tuning__item-date,
+  .reviews__item-text,
+  .notes__item-text,
+  .tuning__item-text,
+  .author,
+  .comparison__item-name,
+  .btn--more,
+  .notes__link{
+    font-size: 2.5rem;
+  }
+  .btn--more{
+    font-size: 2.8rem;
+  }
+  .beginner__list,
+  .where__list {
+    width: 100%;
+  }
+  .footer__info{
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .questions__items {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 20px;
+  }
+}
+@media (max-width:400px){
+  .news__item{
+    flex-direction: column;
+  }
+  .news__item-img{
+    source,
+    img{
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .news__item-content{
+    max-width: 200px;
+  }
+}
