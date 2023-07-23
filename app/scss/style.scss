@@ -151,7 +151,10 @@
   &__info {
     max-width: 115px;
   }
-
+  &__nav,
+  &__menu{
+    min-width: 220px;
+  }
   &__link {
     color: $white;
   }
@@ -561,6 +564,7 @@
 .header__menu.show {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   position: fixed;
   left: 0;
   top: 0;
@@ -568,7 +572,7 @@
   background: #fff;
   width: 100%;
   height: 100vh;
-  padding: 50px 20px;
+  padding: 70px 20px 50px;
   overflow: auto;
 
   .menu {
