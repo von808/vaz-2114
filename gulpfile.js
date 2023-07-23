@@ -97,11 +97,6 @@ function watching() {
   watch(['app/*.html']).on('change', browserSync.reload);
 }
 
-// function cleanDist() {
-//   return src('dist')
-//     .pipe(clean())
-// }
-
 function cleanDist() {
   return del('dist')
 }

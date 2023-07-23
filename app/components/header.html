@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VAZ-2114</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id="body">
   <div class="wrapper">
     <header class="header">
       <div class="container">
@@ -21,139 +22,7 @@
               <img src="images/header-logo.png" alt="logo">
             </picture>
           </a>
-          <div class="menu text14">
-            <a href="#" class="menu-link">
-              <picture class="menu__img">
-                <source srcset="images/header-car.avif" alt="menu-img" type="image/avif">
-                <source srcset="images/header-car.webp" alt="menu-img" type="image/webp">
-                <img src="images/header-car.png" alt="menu-img">
-              </picture>
-              <p class="menu__title">Цвета</p>
-            </a>
-            <a href="#" class="menu-link">
-              <picture class="menu__img">
-                <source srcset="images/header-lada.avif" alt="menu-img" type="image/avif">
-                <source srcset="images/header-lada.webp" alt="menu-img" type="image/webp">
-                <img src="images/header-lada.png" alt="menu-img">
-              </picture>
-              <p class="menu__title">Артикул</p>
-            </a>
-            <a href="#" class="menu-link">
-              <picture class="menu__img">
-                <source srcset="images/header-code.avif" alt="menu-img" type="image/avif">
-                <source srcset="images/header-code.webp" alt="menu-img" type="image/webp">
-                <img src="images/header-code.png" alt="menu-img">
-              </picture>
-              <p class="menu__title">Коды ошибок</p>
-            </a>
-            <a href="#" class="menu-link">
-              <picture class="menu__img">
-                <source srcset="images/header-scheme.avif" alt="menu-img" type="image/avif">
-                <source srcset="images/header-scheme.webp" alt="menu-img" type="image/webp">
-                <img src="images/header-scheme.png" alt="menu-img">
-              </picture>
-              <p class="menu__title">Схема предохранителя</p>
-            </a>
-          </div>
-          <a download="" href="#" class="menu-link menu-link--pdf">
-            <picture class="menu__img menu__img--pdf">
-              <source srcset="images/pdf.avif" alt="pdf" type="image/avif">
-              <source srcset="images/pdf.webp" alt="pdf" type="image/webp">
-              <img src="images/pdf.png" alt="pdf">
-            </picture>
-            <p class="menu__title menu__title--pdf">Руководство по эксплуатации ВАЗ-2114</p>
-          </a>
-          <ul class="nav">
-            <li class="nav__item">
-              <a class="nav__item-link" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link" href="#">
-                Новости
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link" href="#">
-                Обслуживание
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link" href="#">
-                Новичкам
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link" href="#">
-                где находится?
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link" href="#">
-                видео
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link" href="#">
-                контакты
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- <div class="header__inner">
-          <a class="logo" href="#">
-            <picture class="logo__img">
-              <source srcset="images/header-logo.avif" alt="logo" type="image/avif">
-              <source srcset="images/header-logo.webp" alt="logo" type="image/webp">
-              <img src="images/header-logo.png" alt="logo">
-            </picture>
-          </a>
-          <div class="header__menu">
-            <div class="menu text14">
-              <div class="menu__inner">
-                <a href="#" class="menu-link">
-                  <picture class="menu__img">
-                    <source srcset="images/header-car.avif" alt="menu-img" type="image/avif">
-                    <source srcset="images/header-car.webp" alt="menu-img" type="image/webp">
-                    <img src="images/header-car.png" alt="menu-img">
-                  </picture>
-                  <p class="menu__title">Цвета</p>
-                </a>
-                <a href="#" class="menu-link">
-                  <picture class="menu__img">
-                    <source srcset="images/header-lada.avif" alt="menu-img" type="image/avif">
-                    <source srcset="images/header-lada.webp" alt="menu-img" type="image/webp">
-                    <img src="images/header-lada.png" alt="menu-img">
-                  </picture>
-                  <p class="menu__title">Артикул</p>
-                </a>
-                <a href="#" class="menu-link">
-                  <picture class="menu__img">
-                    <source srcset="images/header-code.avif" alt="menu-img" type="image/avif">
-                    <source srcset="images/header-code.webp" alt="menu-img" type="image/webp">
-                    <img src="images/header-code.png" alt="menu-img">
-                  </picture>
-                  <p class="menu__title">Коды ошибок</p>
-                </a>
-                <a href="#" class="menu-link">
-                  <picture class="menu__img">
-                    <source srcset="images/header-scheme.avif" alt="menu-img" type="image/avif">
-                    <source srcset="images/header-scheme.webp" alt="menu-img" type="image/webp">
-                    <img src="images/header-scheme.png" alt="menu-img">
-                  </picture>
-                  <p class="menu__title">Схема предохранителя</p>
-                </a>
-              </div>
-              <a download="" href="#" class="menu-link menu-link--pdf">
-                <picture class="menu__img menu__img--pdf">
-                  <source srcset="images/pdf.avif" alt="pdf" type="image/avif">
-                  <source srcset="images/pdf.webp" alt="pdf" type="image/webp">
-                  <img src="images/pdf.png" alt="pdf">
-                </picture>
-                <p class="menu__title menu__title--pdf">Руководство по эксплуатации ВАЗ-2114</p>
-              </a>
-            </div>
+          <div class="header__menu" id="nav">
             <ul class="nav">
               <li class="nav__item">
                 <a class="nav__item-link" href="#">
@@ -191,7 +60,52 @@
                 </a>
               </li>
             </ul>
+            <div class="menu text14">
+              <a href="#" class="menu-link">
+                <picture class="menu__img">
+                  <source srcset="images/header-car.avif" alt="menu-img" type="image/avif">
+                  <source srcset="images/header-car.webp" alt="menu-img" type="image/webp">
+                  <img src="images/header-car.png" alt="menu-img">
+                </picture>
+                <p class="menu__title">Цвета</p>
+              </a>
+              <a href="#" class="menu-link">
+                <picture class="menu__img">
+                  <source srcset="images/header-lada.avif" alt="menu-img" type="image/avif">
+                  <source srcset="images/header-lada.webp" alt="menu-img" type="image/webp">
+                  <img src="images/header-lada.png" alt="menu-img">
+                </picture>
+                <p class="menu__title">Артикул</p>
+              </a>
+              <a href="#" class="menu-link">
+                <picture class="menu__img">
+                  <source srcset="images/header-code.avif" alt="menu-img" type="image/avif">
+                  <source srcset="images/header-code.webp" alt="menu-img" type="image/webp">
+                  <img src="images/header-code.png" alt="menu-img">
+                </picture>
+                <p class="menu__title">Коды ошибок</p>
+              </a>
+              <a href="#" class="menu-link">
+                <picture class="menu__img">
+                  <source srcset="images/header-scheme.avif" alt="menu-img" type="image/avif">
+                  <source srcset="images/header-scheme.webp" alt="menu-img" type="image/webp">
+                  <img src="images/header-scheme.png" alt="menu-img">
+                </picture>
+                <p class="menu__title">Схема предохранителя</p>
+              </a>
+              <a download="" href="#" class="menu-link menu-link--pdf">
+                <picture class="menu__img menu__img--pdf">
+                  <source srcset="images/pdf.avif" alt="pdf" type="image/avif">
+                  <source srcset="images/pdf.webp" alt="pdf" type="image/webp">
+                  <img src="images/pdf.png" alt="pdf">
+                </picture>
+                <p class="menu__title menu__title--pdf">Руководство по эксплуатации ВАЗ-2114</p>
+              </a>
+            </div>
           </div>
-        </div> -->
+          <button class="burger" type="button" id="navToggle">
+            <span class="burger_item">Menu</span>
+          </button>
+        </div>
       </div>
     </header>

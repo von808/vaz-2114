@@ -57,6 +57,7 @@ body {
     border-left: 15px solid transparent;
     transition: all .1s linear;
   }
+
   &:after {
     position: absolute;
     content: '';
@@ -70,7 +71,7 @@ body {
   }
 }
 
-.btn--more{
+.btn--more {
   font-size: 2rem;
   display: block;
   width: fit-content;
@@ -82,6 +83,7 @@ body {
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
   position: relative;
+
   &:before {
     position: absolute;
     content: '';
@@ -92,6 +94,7 @@ body {
     border-top: 34px solid $orange;
     border-left: 10px solid transparent;
   }
+
   &:after {
     position: absolute;
     content: '';
@@ -104,7 +107,7 @@ body {
   }
 }
 
-.title-aside{
+.title-aside {
   font-size: 8.4rem;
   padding-top: 20px;
 }
@@ -112,9 +115,11 @@ body {
 .text14 {
   font-size: 1.4rem;
 }
+
 .text16 {
   font-size: 1.6rem;
 }
+
 .text18 {
   font-size: 1.8rem;
 }
