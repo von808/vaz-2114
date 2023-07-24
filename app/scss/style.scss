@@ -78,6 +78,7 @@
 
   &__title {
     font-size: 14px;
+    font-weight: 500;
   }
 
   &__title--pdf {
@@ -242,15 +243,100 @@
 
   &__img {
     display: block;
-    padding-top: 50px;
+    padding-top: 70px;
     object-position: center;
+    position: relative;
+    max-width: 1110px;
 
     source,
     img {
+      display: block;
       object-fit: contain;
       max-width: 100%;
       height: auto;
+      margin: 0 auto;
     }
+  }
+  &__img-link{
+    position: absolute;
+    color: $blue;
+    font-size: 2rem;
+  }
+  &__img-link--1{
+    left: 14.8%;
+    top: 11.5%;
+  }
+  &__img-link--2{
+    left: 36.6%;
+    top: 14.3%;
+  }
+  &__img-link--3{
+    left: 43.5%;
+    top: 7.9%;
+  }
+  &__img-link--4{
+    left: 55.5%;
+    top: 16.6%;
+  }
+  &__img-link--5{
+    left: 70.5%;
+    top: 11.5%;
+  }
+  &__img-link--6{
+    left: 81.5%;
+    top: 14.7%;
+  }
+  &__img-link--7{
+    left: 91.7%;
+    top: 31.2%;
+  }
+  &__img-link--8{
+    left: 92.8%;
+    top: 74.5%;
+  }
+  &__img-link--9{
+    left: 80.9%;
+    top: 79.2%;
+  }
+  &__img-link--10{
+    left: 68.5%;
+    top: 82.1%;
+  }
+  &__img-link--11{
+    left: 51.9%;
+    top: 75.8%;
+  }
+  &__img-link--12{
+    left: 38.6%;
+    top: 76.2%;
+  }
+  &__img-link--13{
+    left: 12%;
+    top: 86%;
+  }
+  &__img-link--14{
+    left: 2.2%;
+    top: 74.2%;
+  }
+  &__img-link--15{
+    left: 1%;
+    top: 61.6%;
+  }
+  &__img-link--16{
+    left: 0.8%;
+    top: 49%;
+  }
+  &__img-link--17{
+    left: 0.9%;
+    top: 38.3%;
+  }
+  &__img-link--18{
+    left: 3.1%;
+    top: 29.1%;
+  }
+  &__img-link--19{
+    left: 9.7%;
+    top: 19.7%;
   }
 }
 
