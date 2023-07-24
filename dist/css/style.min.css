@@ -389,9 +389,6 @@ body {
 .footer__info {
   max-width: 115px;
 }
-.footer__nav, .footer__menu {
-  min-width: 220px;
-}
 .footer__link {
   color: #fff;
 }
@@ -981,6 +978,10 @@ body {
     justify-content: center;
     padding: 0 20px;
     font-size: 2.5rem;
+  }
+  .footer__nav,
+  .footer__menu {
+    min-width: 220px;
   }
   .car__content,
   .comparison__subtitle,
