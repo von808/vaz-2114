@@ -350,7 +350,7 @@ body {
   left: -10px;
   width: 15px;
   height: 0;
-  border-top: 33.5px solid #222d41;
+  border-top: 40.3px solid #222d41;
   border-left: 10px solid transparent;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
@@ -363,7 +363,7 @@ body {
   width: 15px;
   height: 0;
   border-right: 10px solid transparent;
-  border-bottom: 34px solid #222d41;
+  border-bottom: 40.3px solid #222d41;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
