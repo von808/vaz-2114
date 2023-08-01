@@ -9,14 +9,14 @@
 
 @font-face {
   font-family: ubuntu;
-  src: url(../fonts/Ubuntu-Regular.woff2), url(../fonts/Ubuntu-Regular.woff), url(../fonts/src/Ubuntu-Regular.ttf);
+  src: url(../fonts/Ubuntu-Regular.woff2), url(../fonts/Ubuntu-Regular.woff), url(../fonts/Ubuntu-Regular.otf), url(../fonts/src/Ubuntu-Regular.ttf);
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: ubuntu;
-  src: url(../fonts/Ubuntu-Medium.woff2), url(../fonts/Ubuntu-Medium.woff), url(../fonts/src/Ubuntu-Medium.ttf);
+  src: url(../fonts/Ubuntu-Medium.woff2), url(../fonts/Ubuntu-Medium.woff), url(../fonts/Ubuntu-Medium.otf), url(../fonts/src/Ubuntu-Medium.ttf);
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -134,6 +134,7 @@ body {
   background-color: #222d41;
   padding: 10px 20px;
   position: relative;
+  max-width: fit-content;
   width: fit-content;
   height: var(--title-height);
   margin: 0 auto;

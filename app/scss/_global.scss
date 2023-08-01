@@ -38,6 +38,7 @@ body {
   background-color: $blue;
   padding: 10px 20px;
   position: relative;
+  max-width: fit-content;
   width: fit-content;
   height: var(--title-height);
   margin: 0 auto;
