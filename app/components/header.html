@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VAZ-2114</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="body">
@@ -20,8 +20,12 @@
               <source srcset="images/header-logo.webp" alt="logo" type="image/webp">
               <img src="images/header-logo.png" alt="logo">
             </picture>
+                      <button class="burger" type="button" id="navToggle">
+                        <span class="burger_item">Menu</span>
+                      </button>
           </a>
-          <ul class="nav">
+
+          <ul class="nav" id="nav">
             <li class="nav__item">
               <a class="nav__item-link" href="#">
                 Главная
@@ -99,119 +103,13 @@
               </div>
               <p class="menu__title">Схема предохранителя</p>
             </a>
-            <a download="" href="#" class="menu-link menu-link--pdf">
-              <picture class="menu__img menu__img--pdf">
-                <!-- <source srcset="images/pdf.avif" alt="pdf" type="image/avif">
-                <source srcset="images/pdf.webp" alt="pdf" type="image/webp"> -->
-                <img src="images/pdf.png" alt="pdf">
-              </picture>
-              <p class="menu__title menu__title--pdf">Руководство по эксплуатации ВАЗ-2114</p>
-            </a>
           </div>
-          <button class="burger" type="button" id="navToggle">
-            <span class="burger_item">Menu</span>
-          </button>
-        </div>
-        <!-- <div class="header__inner">
-          <a class="logo" href="#">
-            <picture class="logo__img">
-              <source srcset="images/header-logo.avif" alt="logo" type="image/avif">
-              <source srcset="images/header-logo.webp" alt="logo" type="image/webp">
-              <img src="images/header-logo.png" alt="logo">
+          <a download="" href="#" class="menu-link menu-link--pdf">
+            <picture class="menu__img menu__img--pdf">
+              <img src="images/pdf.png" alt="pdf">
             </picture>
+            <p class="menu__title menu__title--pdf">Руководство по эксплуатации ВАЗ-2114</p>
           </a>
-          <div class="header__menu" id="nav">
-            <ul class="nav">
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">
-                  Главная
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">
-                  Новости
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">
-                  Обслуживание
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">
-                  Новичкам
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">
-                  где находится?
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">
-                  видео
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__item-link" href="#">
-                  контакты
-                </a>
-              </li>
-            </ul>
-            <div class="menu text14">
-              <a href="#" class="menu-link">
-                <div class="menu__img-wrapper">
-                  <picture class="menu__img menu__img--1">
-                    <source srcset="images/header-car.avif" alt="menu-img" type="image/avif">
-                    <source srcset="images/header-car.webp" alt="menu-img" type="image/webp">
-                    <img src="images/header-car.png" alt="menu-img">
-                  </picture>
-                </div>
-                <p class="menu__title">Цвета</p>
-              </a>
-              <a href="#" class="menu-link">
-                <div class="menu__img-wrapper">
-                  <picture class="menu__img menu__img--2">
-                    <source srcset="images/header-lada.avif" alt="menu-img" type="image/avif">
-                    <source srcset="images/header-lada.webp" alt="menu-img" type="image/webp">
-                    <img src="images/header-lada.png" alt="menu-img">
-                  </picture>
-                </div>
-                <p class="menu__title">Артикул</p>
-              </a>
-              <a href="#" class="menu-link">
-                <div class="menu__img-wrapper">
-                  <picture class="menu__img menu__img--3">
-                    <source srcset="images/header-code.avif" alt="menu-img" type="image/avif">
-                    <source srcset="images/header-code.webp" alt="menu-img" type="image/webp">
-                    <img src="images/header-code.png" alt="menu-img">
-                  </picture>
-                </div>
-                <p class="menu__title">Коды ошибок</p>
-              </a>
-              <a href="#" class="menu-link">
-                <div class="menu__img-wrapper">
-                  <picture class="menu__img menu__img--4">
-                    <source srcset="images/header-scheme.avif" alt="menu-img" type="image/avif">
-                    <source srcset="images/header-scheme.webp" alt="menu-img" type="image/webp">
-                    <img src="images/header-scheme.png" alt="menu-img">
-                  </picture>
-                </div>
-                <p class="menu__title">Схема предохранителя</p>
-              </a>
-              <a download="" href="#" class="menu-link menu-link--pdf">
-                <picture class="menu__img menu__img--pdf">
-                  <source srcset="images/pdf.avif" alt="pdf" type="image/avif">
-                  <source srcset="images/pdf.webp" alt="pdf" type="image/webp">
-                  <img src="images/pdf.png" alt="pdf">
-                </picture>
-                <p class="menu__title menu__title--pdf">Руководство по эксплуатации ВАЗ-2114</p>
-              </a>
-            </div>
-          </div>
-          <button class="burger" type="button" id="navToggle">
-            <span class="burger_item">Menu</span>
-          </button>
-        </div> -->
+        </div>
       </div>
     </header>

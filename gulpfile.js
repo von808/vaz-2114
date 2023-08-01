@@ -78,7 +78,7 @@ function scripts() {
 function styles() {
   return src('app/scss/style.scss')
     .pipe(autoprefixer({overrideBrowserslist: ['last 10 version']}))
-    .pipe(concat('style.min.css'))
+    .pipe(concat('style.css'))
     .pipe(scss({ outputStyle: 'expanded' }))
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
@@ -103,7 +103,7 @@ function cleanDist() {
 
 function building() {
   return src([
-    'app/css/style.min.css',
+    'app/css/style.css',
     'app/images/*.*',
     // '!app/images/*.svg',
     // 'app/images/sprite.svg',
