@@ -1337,6 +1337,18 @@ body {
   .to__img-link {
     font-size: 2rem;
   }
+  .btn--more:before {
+    border-top: 31.2px solid #ee6d4d;
+  }
+  .btn--more:after {
+    border-bottom: 31.2px solid #ee6d4d;
+  }
+  .btn--more:hover:before {
+    border-top: 31.2px solid #222d41;
+  }
+  .btn--more:hover:after {
+    border-bottom: 31.2px solid #222d41;
+  }
 }
 @media (max-width: 700px) {
   .comparison__items {
@@ -1572,6 +1584,18 @@ body {
 @media (max-width: 470px) {
   html {
     font-size: 5px;
+  }
+  .btn--more:before {
+    border-top: 34px solid #ee6d4d;
+  }
+  .btn--more:after {
+    border-bottom: 34px solid #ee6d4d;
+  }
+  .btn--more:hover:before {
+    border-top: 34px solid #222d41;
+  }
+  .btn--more:hover:after {
+    border-bottom: 34px solid #222d41;
   }
   .beginner__content,
   .where__content {

@@ -168,6 +168,19 @@
   .to__img-link {
     font-size: 2rem;
   }
+  .btn--more:before{
+    border-top: 31.2px solid $orange;
+  }
+  .btn--more:after{
+    border-bottom: 31.2px solid $orange;
+  }
+  .btn--more:hover:before {
+    border-top: 31.2px solid $blue;
+  }
+
+  .btn--more:hover:after {
+    border-bottom: 31.2px solid $blue;
+  }
 }
 
 @media (max-width:700px) {
@@ -462,6 +475,21 @@
 @media (max-width:470px) {
   html {
     font-size: 5px;
+  }
+  .btn--more:before {
+    border-top: 34px solid $orange;
+  }
+
+  .btn--more:after {
+    border-bottom: 34px solid $orange;
+  }
+
+  .btn--more:hover:before {
+    border-top: 34px solid $blue;
+  }
+
+  .btn--more:hover:after {
+    border-bottom: 34px solid $blue;
   }
 
   .beginner__content,
