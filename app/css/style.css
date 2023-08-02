@@ -201,6 +201,15 @@ body {
   border-right: 10px solid transparent;
   border-bottom: 36px solid #ee6d4d;
 }
+.btn--more:hover {
+  background-color: #222d41;
+}
+.btn--more:hover:before {
+  border-top: 36px solid #222d41;
+}
+.btn--more:hover:after {
+  border-bottom: 36px solid #222d41;
+}
 
 .title-aside {
   font-size: 8.4rem;

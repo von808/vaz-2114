@@ -108,6 +108,15 @@ body {
     border-right: 10px solid transparent;
     border-bottom: 36px solid $orange;
   }
+  &:hover{
+    background-color: $blue;
+  }
+  &:hover:before{
+      border-top: 36px solid $blue;
+  }
+  &:hover:after{
+      border-bottom: 36px solid $blue;
+  }
 }
 
 .title-aside {
