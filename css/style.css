@@ -752,106 +752,14 @@ body {
 }
 
 .to {
-  padding: 50px 0 0;
+  padding: 50px 0;
 }
-.to__img {
-  display: block;
-  padding-top: 70px;
-  -o-object-position: center;
-  object-position: center;
-  position: relative;
-  max-width: 1110px;
-}
-.to__img source,
-.to__img img {
-  display: block;
-  -o-object-fit: contain;
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-.to__img-link {
-  position: absolute;
-  color: #222d41;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.to__img-link--1 {
-  left: 14.8%;
-  top: 11.5%;
-}
-.to__img-link--2 {
-  left: 36.6%;
-  top: 14.3%;
-}
-.to__img-link--3 {
-  left: 43.5%;
-  top: 7.9%;
-}
-.to__img-link--4 {
-  left: 55.5%;
-  top: 16.6%;
-}
-.to__img-link--5 {
-  left: 70.5%;
-  top: 11.5%;
-}
-.to__img-link--6 {
-  left: 81.5%;
-  top: 14.7%;
-}
-.to__img-link--7 {
-  left: 91.7%;
-  top: 31.2%;
-}
-.to__img-link--8 {
-  left: 92.8%;
-  top: 74.5%;
-}
-.to__img-link--9 {
-  left: 80.9%;
-  top: 79.2%;
-}
-.to__img-link--10 {
-  left: 68.5%;
-  top: 82.1%;
-}
-.to__img-link--11 {
-  left: 51.9%;
-  top: 75.8%;
-}
-.to__img-link--12 {
-  left: 38.6%;
-  top: 76.2%;
-}
-.to__img-link--13 {
-  left: 12%;
-  top: 86%;
-}
-.to__img-link--14 {
-  left: 2.2%;
-  top: 74.2%;
-}
-.to__img-link--15 {
-  left: 1%;
-  top: 61.6%;
-}
-.to__img-link--16 {
-  left: 0.8%;
-  top: 49%;
-}
-.to__img-link--17 {
-  left: 0.9%;
-  top: 38.3%;
-}
-.to__img-link--18 {
-  left: 3.1%;
-  top: 29.1%;
-}
-.to__img-link--19 {
-  left: 9.7%;
-  top: 19.7%;
+.to .beginner__content {
+  background-image: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px 0;
 }
 
 .records__content {
@@ -1290,42 +1198,6 @@ body {
     border-top-color: #fff38e;
     border-bottom-color: #fff38e;
   }
-  .to__img-link {
-    font-size: 1.4rem;
-  }
-  .to__img-link--1 {
-    top: 14%;
-  }
-  .to__img-link--2 {
-    top: 16.8%;
-  }
-  .to__img-link--3 {
-    top: 10.6%;
-  }
-  .to__img-link--4 {
-    top: 19%;
-  }
-  .to__img-link--5 {
-    top: 14%;
-  }
-  .to__img-link--6 {
-    top: 16.7%;
-  }
-  .to__img-link--7 {
-    top: 33%;
-  }
-  .to__img-link--16 {
-    top: 50.2%;
-  }
-  .to__img-link--17 {
-    top: 40%;
-  }
-  .to__img-link--18 {
-    top: 31%;
-  }
-  .to__img-link--19 {
-    top: 22%;
-  }
 }
 @media (max-width: 800px) {
   html {
@@ -1348,6 +1220,9 @@ body {
   }
   .btn--more:hover:after {
     border-bottom: 31.2px solid #222d41;
+  }
+  .records__item-record {
+    font-size: 2rem;
   }
 }
 @media (max-width: 700px) {
@@ -1436,51 +1311,6 @@ body {
     display: block;
     margin: 0 auto;
   }
-  .to__img-link {
-    font-size: 1.4rem;
-  }
-  .to__img-link--1 {
-    top: 19%;
-  }
-  .to__img-link--2 {
-    top: 21.5%;
-  }
-  .to__img-link--3 {
-    top: 15.5%;
-  }
-  .to__img-link--4 {
-    top: 23.5%;
-  }
-  .to__img-link--5 {
-    top: 19%;
-  }
-  .to__img-link--6 {
-    top: 22%;
-  }
-  .to__img-link--7 {
-    top: 36.5%;
-  }
-  .to__img-link--14 {
-    top: 75.5%;
-  }
-  .to__img-link--13 {
-    left: 12%;
-  }
-  .to__img-link--15 {
-    top: 64%;
-  }
-  .to__img-link--16 {
-    top: 52.5%;
-  }
-  .to__img-link--17 {
-    top: 43.2%;
-  }
-  .to__img-link--18 {
-    top: 35%;
-  }
-  .to__img-link--19 {
-    top: 26.5%;
-  }
 }
 @media (max-width: 550px) {
   .questions__items {
@@ -1519,67 +1349,6 @@ body {
     margin: 0 auto;
     display: block;
   }
-  .to__img-link {
-    font-size: 1.1rem;
-  }
-  .to__img-link--1 {
-    top: 22%;
-  }
-  .to__img-link--2 {
-    top: 24.2%;
-  }
-  .to__img-link--3 {
-    top: 18.5%;
-  }
-  .to__img-link--4 {
-    top: 26%;
-  }
-  .to__img-link--5 {
-    top: 22%;
-  }
-  .to__img-link--6 {
-    top: 24.5%;
-  }
-  .to__img-link--7 {
-    top: 39%;
-  }
-  .to__img-link--8 {
-    top: 76%;
-  }
-  .to__img-link--9 {
-    top: 80.2%;
-  }
-  .to__img-link--10 {
-    top: 82.8%;
-  }
-  .to__img-link--11 {
-    top: 77%;
-  }
-  .to__img-link--12 {
-    top: 77.5%;
-  }
-  .to__img-link--13 {
-    top: 86%;
-    left: 12%;
-  }
-  .to__img-link--14 {
-    top: 76%;
-  }
-  .to__img-link--15 {
-    top: 65%;
-  }
-  .to__img-link--16 {
-    top: 54%;
-  }
-  .to__img-link--17 {
-    top: 44.8%;
-  }
-  .to__img-link--18 {
-    top: 37%;
-  }
-  .to__img-link--19 {
-    top: 28.8%;
-  }
 }
 @media (max-width: 470px) {
   html {
@@ -1607,7 +1376,6 @@ body {
   .footer__menu {
     min-width: 220px;
   }
-  .car__content,
   .comparison__subtitle,
   .car__img-subtitle,
   .records__items,
@@ -1623,6 +1391,9 @@ body {
   .btn--more,
   .notes__link {
     font-size: 2.5rem;
+  }
+  .car__content {
+    font-size: 3.2rem;
   }
   .btn--more {
     font-size: 2.8rem;
@@ -1640,80 +1411,20 @@ body {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 20px;
   }
-  .to__img-link--1 {
-    top: 24%;
-    left: 17%;
+  .records__item-record {
+    font-size: 2.5rem;
   }
-  .to__img-link--2 {
-    top: 26.5%;
-    left: 37%;
+  .to .beginner__content {
+    padding: 30px 20px;
   }
-  .to__img-link--3 {
-    top: 21%;
-    left: 46%;
+  .video__item-date {
+    font-size: 2.5rem;
   }
-  .to__img-link--4 {
-    top: 28.5%;
-    left: 57%;
+  .questions__date {
+    font-size: 2.3rem;
   }
-  .to__img-link--5 {
-    top: 24.5%;
-    left: 71.2%;
-  }
-  .to__img-link--6 {
-    top: 26.5%;
-    left: 83.2%;
-  }
-  .to__img-link--7 {
-    top: 40%;
-    left: 92.2%;
-  }
-  .to__img-link--8 {
-    top: 76%;
-    left: 93.5%;
-  }
-  .to__img-link--9 {
-    top: 80.2%;
-    left: 81.5%;
-  }
-  .to__img-link--10 {
-    top: 82.5%;
-    left: 69%;
-  }
-  .to__img-link--11 {
-    top: 77%;
-    left: 53%;
-  }
-  .to__img-link--12 {
-    top: 77.5%;
-    left: 39.5%;
-  }
-  .to__img-link--13 {
-    top: 85%;
-    left: 13.5%;
-  }
-  .to__img-link--14 {
-    top: 75.5%;
-    left: 3.5%;
-  }
-  .to__img-link--15 {
-    top: 65%;
-  }
-  .to__img-link--16 {
-    top: 55%;
-    left: 1.5%;
-  }
-  .to__img-link--17 {
-    top: 46%;
-    left: 1.8%;
-  }
-  .to__img-link--18 {
-    top: 38%;
-    left: 3.8%;
-  }
-  .to__img-link--19 {
-    top: 31%;
-    left: 10.5%;
+  .questions__link {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 400px) {
