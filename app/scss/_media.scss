@@ -168,12 +168,15 @@
   .to__img-link {
     font-size: 2rem;
   }
-  .btn--more:before{
+
+  .btn--more:before {
     border-top: 31.2px solid $orange;
   }
-  .btn--more:after{
+
+  .btn--more:after {
     border-bottom: 31.2px solid $orange;
   }
+
   .btn--more:hover:before {
     border-top: 31.2px solid $blue;
   }
@@ -360,6 +363,14 @@
   .footer__inner {
     gap: 30px 10px;
   }
+
+  .to__img {
+    display: none;
+  }
+
+  .to .beginner__content {
+    display: flex;
+  }
 }
 
 @media (max-width:500px) {
@@ -389,93 +400,13 @@
     margin: 0 auto;
     display: block;
   }
-
-  .to__img-link {
-    font-size: 1.1rem;
-  }
-
-  .to__img-link--1 {
-    top: 22%;
-  }
-
-  .to__img-link--2 {
-    top: 24.2%;
-  }
-
-  .to__img-link--3 {
-    top: 18.5%;
-  }
-
-  .to__img-link--4 {
-    top: 26%;
-  }
-
-  .to__img-link--5 {
-    top: 22%;
-  }
-
-  .to__img-link--6 {
-    top: 24.5%;
-  }
-
-  .to__img-link--7 {
-    top: 39%;
-  }
-
-  .to__img-link--8 {
-    top: 76%;
-  }
-
-  .to__img-link--9 {
-    top: 80.2%;
-  }
-
-  .to__img-link--10 {
-    top: 82.8%;
-  }
-
-  .to__img-link--11 {
-    top: 77%;
-  }
-
-  .to__img-link--12 {
-    top: 77.5%;
-  }
-
-  .to__img-link--13 {
-    top: 86%;
-    left: 12%;
-  }
-
-  .to__img-link--14 {
-    top: 76%;
-  }
-
-  .to__img-link--15 {
-    top: 65%;
-  }
-
-  .to__img-link--16 {
-    top: 54%;
-  }
-
-  .to__img-link--17 {
-    top: 44.8%;
-  }
-
-  .to__img-link--18 {
-    top: 37%;
-  }
-
-  .to__img-link--19 {
-    top: 28.8%;
-  }
 }
 
 @media (max-width:470px) {
   html {
     font-size: 5px;
   }
+
   .btn--more:before {
     border-top: 34px solid $orange;
   }
@@ -504,7 +435,6 @@
     min-width: 220px;
   }
 
-  .car__content,
   .comparison__subtitle,
   .car__img-subtitle,
   .records__items,
@@ -519,6 +449,26 @@
   .comparison__item-name,
   .btn--more,
   .notes__link {
+    font-size: 2.5rem;
+  }
+
+  .car__content {
+    font-size: 3.2rem;
+  }
+
+  .records__item-record {
+    font-size: 2.5rem;
+  }
+
+  .video__item-date {
+    font-size: 2.5rem;
+  }
+
+  .questions__date {
+    font-size: 2.3rem;
+  }
+
+  .questions__link {
     font-size: 2.5rem;
   }
 
@@ -541,100 +491,6 @@
     grid-template-columns: repeat(1, 1fr);
     padding: 0 20px;
   }
-
-  .to__img-link--1 {
-    top: 24%;
-    left: 17%;
-  }
-
-  .to__img-link--2 {
-    top: 26.5%;
-    left: 37%;
-  }
-
-  .to__img-link--3 {
-    top: 21%;
-    left: 46%;
-  }
-
-  .to__img-link--4 {
-    top: 28.5%;
-    left: 57%;
-  }
-
-  .to__img-link--5 {
-    top: 24.5%;
-    left: 71.2%;
-  }
-
-  .to__img-link--6 {
-    top: 26.5%;
-    left: 83.2%;
-  }
-
-  .to__img-link--7 {
-    top: 40%;
-    left: 92.2%;
-  }
-
-  .to__img-link--8 {
-    top: 76%;
-    left: 93.5%;
-  }
-
-  .to__img-link--9 {
-    top: 80.2%;
-    left: 81.5%;
-  }
-
-  .to__img-link--10 {
-    top: 82.5%;
-    left: 69%;
-  }
-
-  .to__img-link--11 {
-    top: 77%;
-    left: 53%;
-  }
-
-  .to__img-link--12 {
-    top: 77.5%;
-    left: 39.5%;
-  }
-
-  .to__img-link--13 {
-    top: 85%;
-    left: 13.5%;
-  }
-
-  .to__img-link--14 {
-    top: 75.5%;
-    left: 3.5%;
-  }
-
-  .to__img-link--15 {
-    top: 65%;
-  }
-
-  .to__img-link--16 {
-    top: 55%;
-    left: 1.5%;
-  }
-
-  .to__img-link--17 {
-    top: 46%;
-    left: 1.8%;
-  }
-
-  .to__img-link--18 {
-    top: 38%;
-    left: 3.8%;
-  }
-
-  .to__img-link--19 {
-    top: 31%;
-    left: 10.5%;
-  }
 }
 
 @media (max-width:400px) {
@@ -653,197 +509,5 @@
 
   .news__item-content {
     max-width: 200px;
-  }
-}
-
-@media (max-width:370px) {
-  .to__img-link--1 {
-    top: 26.5%;
-    left: 15.5%;
-  }
-
-  .to__img-link--2 {
-    top: 29%;
-    left: 36.8%;
-  }
-
-  .to__img-link--3 {
-    top: 24%;
-    left: 44.2%;
-  }
-
-  .to__img-link--4 {
-    top: 31%;
-    left: 56%;
-  }
-
-  .to__img-link--5 {
-    top: 27%;
-    left: 71%;
-  }
-
-  .to__img-link--6 {
-    top: 29%;
-    left: 82%;
-  }
-
-  .to__img-link--7 {
-    top: 42%;
-    left: 92%;
-  }
-
-  .to__img-link--8 {
-    top: 76%;
-    left: 93%;
-  }
-
-  .to__img-link--9 {
-    top: 80.2%;
-    left: 81%;
-  }
-
-  .to__img-link--10 {
-    top: 82.5%;
-    left: 69%;
-  }
-
-  .to__img-link--11 {
-    top: 77%;
-    left: 53%;
-  }
-
-  .to__img-link--12 {
-    top: 78%;
-    left: 39%;
-  }
-
-  .to__img-link--13 {
-    top: 85%;
-    left: 12.5%;
-  }
-
-  .to__img-link--14 {
-    top: 75.5%;
-    left: 3%;
-  }
-
-  .to__img-link--15 {
-    top: 66%;
-  }
-
-  .to__img-link--16 {
-    top: 56%;
-    left: 1%;
-  }
-
-  .to__img-link--17 {
-    top: 47.5%;
-    left: 1.5%;
-  }
-
-  .to__img-link--18 {
-    top: 40%;
-    left: 3.8%;
-  }
-
-  .to__img-link--19 {
-    top: 33%;
-    left: 10.5%;
-  }
-}
-
-@media (max-width:350px) {
-  .to__img-link--1 {
-    top: 28%;
-    left: 15.5%;
-  }
-
-  .to__img-link--2 {
-    top: 30.5%;
-    left: 36.8%;
-  }
-
-  .to__img-link--3 {
-    top: 26%;
-    left: 44.2%;
-  }
-
-  .to__img-link--4 {
-    top: 32%;
-    left: 56%;
-  }
-
-  .to__img-link--5 {
-    top: 28%;
-    left: 71%;
-  }
-
-  .to__img-link--6 {
-    top: 30%;
-    left: 82%;
-  }
-
-  .to__img-link--7 {
-    top: 43%;
-    left: 92%;
-  }
-
-  .to__img-link--8 {
-    top: 77%;
-    left: 93%;
-  }
-
-  .to__img-link--9 {
-    top: 80.2%;
-    left: 81%;
-  }
-
-  .to__img-link--10 {
-    top: 82.5%;
-    left: 69%;
-  }
-
-  .to__img-link--11 {
-    top: 77%;
-    left: 53%;
-  }
-
-  .to__img-link--12 {
-    top: 78.0%;
-    left: 39%;
-  }
-
-  .to__img-link--13 {
-    top: 85.2%;
-    left: 12.5%;
-  }
-
-  .to__img-link--14 {
-    top: 76%;
-    left: 3%;
-  }
-
-  .to__img-link--15 {
-    top: 66.5%;
-  }
-
-  .to__img-link--16 {
-    top: 57%;
-    left: 1%;
-  }
-
-  .to__img-link--17 {
-    top: 49%;
-    left: 1.5%;
-  }
-
-  .to__img-link--18 {
-    top: 41%;
-    left: 3.8%;
-  }
-
-  .to__img-link--19 {
-    top: 34%;
-    left: 10.5%;
   }
 }
