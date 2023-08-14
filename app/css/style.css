@@ -1588,7 +1588,8 @@ body {
     font-size: 2.5rem;
   }
   .questions__date {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+    padding: 2px 4.5px;
   }
   .questions__link {
     font-size: 2.5rem;
